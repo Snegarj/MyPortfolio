@@ -1,30 +1,4 @@
-/*==================================
-* Author        : "ThemeSine"
-* Template Name :  Browny  HTML Template
-* Version       : 1.0
-==================================== */
 
-/*==================================
-font-family: 'Poppins', sans-serif;
-==================================== */
-
-
-/*=========== TABLE OF CONTENTS ===========
-1.  General css (Reset code)
-2.  Header
-3.  Welcome-hero
-4.  About me 
-5.  Education
-6.  Skill
-7.  Experience
-8.  Profiles
-9.  Portfolio
-10. Clients
-11. Contact
-
-/*-------------------------------------
-		1.General css (Reset code)
---------------------------------------*/
 *{
     padding: 0;
     margin: 0;
@@ -196,7 +170,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     background:url(../images/bg.avif)no-repeat;
     background-size:cover;
     background-position: center;
-    height:890px;
+    height:650px;
 }
 .welcome-hero:before{
     position:absolute;
@@ -284,7 +258,7 @@ margin-top:10px ;
 /*-------------------------------------
         4.  About
 --------------------------------------*/
-.about {padding: 50px 0 50px;}
+.about {padding: 50px 0 0px;}
 .about-content {padding-top: 50px;}
 /*.single-about-txt*/
 .single-about-txt h3 {
@@ -479,7 +453,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         7. Experience
 -------------------------------------*/
 .experience {
-    padding: 50px 0 50px;
+    padding: 50px 0 10px;
     border-top: 1px solid #e5ebf2;
 }
 .experience-content {padding-top: 50px;}
@@ -639,10 +613,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     border:  1px solid #e5ebf2;
 }
 
-.portfolio-content {padding-top: 100px;}
+.portfolio-content {padding-top: 50px;}
 .portfolio-container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 /* ---- .item ---- */
 .isotope:after {
@@ -651,11 +626,16 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     clear: both;
 }
 .isotope .item {
-    position:relative;
-    overflow:hidden;
+    position: relative;
+    overflow: hidden;
     margin-left: 30px;
-    width: 30%;
+   border: 1px solid rgba(128, 128, 128, 0.096); 
+   border-radius: 5px; 
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+    width: 45%;
+    margin: 0 20px;
     margin-bottom: 30px;
+    padding: 20px;
 }
 /*.item img*/
 .isotope .item img{
@@ -708,6 +688,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     -moz-transform:scale(1);
     -ms-transform:scale(1);
     -o-transform:scale(1);
+    left: 0;
     transform:scale(1);
     top:0;
 }/*.isotope-overlay*/
@@ -914,4 +895,12 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 .ex-icon{
     display: none;
+}
+
+.img-subheader{
+    color: #636a82;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 9px 0 15px;
+
 }
