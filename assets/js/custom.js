@@ -1,13 +1,5 @@
 $(document).ready(function(){
 	"use strict";
-    
-        /*==================================
-* Author        : "ThemeSine"
-* Template Name : Khanas HTML Template
-* Version       : 1.0
-==================================== */
-
-
 
 /*=========== TABLE OF CONTENTS ===========
 1. Scroll To Top 
@@ -16,6 +8,15 @@ $(document).ready(function(){
 4. owl carousel
 5. welcome animation support
 ======================================*/
+
+$(window).on('scroll',function(){
+	if($(this).scrollTop() > 0){
+		$('body').addClass('bg-onScroll')
+	}
+	else{
+		$('body').removeClass('bg-onScroll')
+	}
+})
 
     // 1. Scroll To Top 
 		$(window).on('scroll',function () {
